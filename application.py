@@ -32,7 +32,7 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 
 # Server-side Parameters
 CLIENT_SIDE_URL = "http://127.0.0.1"
-PORT = 4000
+PORT = 8080
 REDIRECT_URI = "https://optimalplaylist.herokuapp.com/callback/q"
 SCOPE = "playlist-modify-public playlist-modify-private"
 STATE = ""
