@@ -9,6 +9,7 @@ import operator
 import spotipy.util as util
 from flask import Flask, render_template, redirect, request
 import configparser
+import os
 
 app = Flask(__name__)
 
@@ -135,4 +136,5 @@ def partyform():
 
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host="0.0.0.0", port=PORT)
