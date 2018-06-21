@@ -28,7 +28,7 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 PORT = 8080
 
 # Server-side Parameters
-REDIRECT_URI = "http://127.0.0.1:8080/callback/q"
+REDIRECT_URI = "https://optimalplaylist.herokuapp.com/callback/q"
 SCOPE = "playlist-modify-public playlist-modify-private"
 STATE = ""
 SHOW_DIALOG_bool = True
@@ -133,5 +133,5 @@ def partyform():
 
 
 if __name__ == "__main__":
-    # port = int(os.environ.get("PORT", 5000))
-    app.run(port=PORT)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host="0.0.0.0", port=port)
