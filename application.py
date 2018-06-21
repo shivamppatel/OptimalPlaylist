@@ -12,7 +12,7 @@ import configparser
 import os
 
 app = Flask(__name__)
-
+#WORKING
 
 cg = configparser.ConfigParser()
 cg.read('config.ini')
