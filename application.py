@@ -18,11 +18,6 @@ cg = configparser.ConfigParser()
 cg.read('config.ini')
 CLIENT_ID = cg.get('Spotify', 'client_id')
 CLIENT_SECRET = cg.get('Spotify', 'client_secret')
-tej_id = cg.get('Spotify', 'tej_id')
-rohan_id = cg.get('Spotify', 'rohan_id')
-ram_id = cg.get('Spotify', 'ram_id')
-yash_id = cg.get('Spotify', 'yash_id')
-shivam_id = cg.get('Spotify', 'shivam_id')
 
 # Spotify URLS
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
@@ -44,8 +39,6 @@ auth_query_parameters = {
     "response_type": "code",
     "redirect_uri": REDIRECT_URI,
     "scope": SCOPE,
-    # "state": STATE,
-    # "show_dialog": SHOW_DIALOG_str,
     "client_id": CLIENT_ID
 }
 
