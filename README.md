@@ -6,4 +6,4 @@ This web app was created as our submission for Capitl One's intern hackathon (Ca
 
 Since this app has been deployed with Heroku, just navigate to the following website: https://optimalplaylist.herokuapp.com/
 
-I worked on this project with Shivam Patel, Yash Bora, and Ayushi Sharma.
+I worked on this project with Rohan Tilva, Yash Bora, and Ayushi Sharma.
